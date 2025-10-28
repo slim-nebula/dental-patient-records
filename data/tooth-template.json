@@ -1,6 +1,6 @@
 {
   "tooth_type": "maxillary_third_molar",
-  "description": "Maxillary third molar with 18 anatomical annotation points",
+  "description": "Maxillary third molar with 12 essential anatomical annotation points",
   "hotspots": [
     {
       "id": 1,
@@ -53,16 +53,6 @@
       "clinical_significance": "High-risk area for pit and fissure caries"
     },
     {
-      "id": 6,
-      "name": "Supplementary Grooves",
-      "type": "groove",
-      "category": "supplementary_groove",
-      "position": { "x": 0.0, "y": 0.006875, "z": 0.0 },
-      "normal": { "x": 0.0, "y": 1.0, "z": 0.0 },
-      "description": "Multiple irregular small grooves radiating from central fossa, giving characteristic wrinkled appearance.",
-      "clinical_significance": "Multiple caries-susceptible areas requiring thorough examination"
-    },
-    {
       "id": 7,
       "name": "Fused Root",
       "type": "root",
@@ -103,36 +93,6 @@
       "clinical_significance": "Primary developmental landmark, caries-prone area"
     },
     {
-      "id": 11,
-      "name": "Lingual Developmental Groove",
-      "type": "groove",
-      "category": "developmental_groove",
-      "position": { "x": 0.0, "y": 0.0075, "z": -0.004375 },
-      "normal": { "x": 0.0, "y": 1.0, "z": 0.0 },
-      "description": "Groove separating mesiolingual and distolingual cusps in 4-cusp variant.",
-      "clinical_significance": "Potential retention site for plaque and caries"
-    },
-    {
-      "id": 12,
-      "name": "Mesial Triangular Fossa",
-      "type": "fossa",
-      "category": "depression",
-      "position": { "x": 0.005, "y": 0.00775, "z": 0.0 },
-      "normal": { "x": 0.0, "y": 1.0, "z": 0.0 },
-      "description": "Triangular depression on mesial aspect of occlusal surface.",
-      "clinical_significance": "Common location for pit caries"
-    },
-    {
-      "id": 13,
-      "name": "Distal Triangular Fossa",
-      "type": "fossa",
-      "category": "depression",
-      "position": { "x": -0.005, "y": 0.00775, "z": 0.0 },
-      "normal": { "x": 0.0, "y": 1.0, "z": 0.0 },
-      "description": "Triangular depression on distal aspect of occlusal surface.",
-      "clinical_significance": "Common location for pit caries"
-    },
-    {
       "id": 14,
       "name": "Cervical Line (CEJ)",
       "type": "anatomical_landmark",
@@ -153,26 +113,6 @@
       "clinical_significance": "Primary surface for mastication and occlusal contacts"
     },
     {
-      "id": 16,
-      "name": "Mesial Marginal Ridge",
-      "type": "ridge",
-      "category": "anatomical_landmark",
-      "position": { "x": 0.00875, "y": 0.00875, "z": 0.0 },
-      "normal": { "x": 1.0, "y": 0.5, "z": 0.0 },
-      "description": "Elevated ridge forming the mesial boundary of the occlusal surface.",
-      "clinical_significance": "Important for proper contact with adjacent tooth (second molar)"
-    },
-    {
-      "id": 17,
-      "name": "Distal Marginal Ridge",
-      "type": "ridge",
-      "category": "anatomical_landmark",
-      "position": { "x": -0.00875, "y": 0.0085, "z": 0.0 },
-      "normal": { "x": -1.0, "y": 0.5, "z": 0.0 },
-      "description": "Elevated ridge forming the distal boundary of the occlusal surface.",
-      "clinical_significance": "May be site of food impaction if poorly contoured"
-    },
-    {
       "id": 18,
       "name": "Root Apex",
       "type": "anatomical_landmark",
@@ -184,9 +124,11 @@
     }
   ],
   "metadata": {
-    "version": "1.0",
-    "total_hotspots": 18,
+    "version": "2.0",
+    "total_hotspots": 12,
     "coordinate_system": "Model space coordinates (origin at center)",
-    "notes": "Fixed anatomical template for maxillary third molar"
+    "notes": "Essential anatomical template for maxillary third molar - 12 mandatory points",
+    "removed_points": [6, 11, 12, 13, 16, 17],
+    "removed_categories": ["supplementary_groove", "mesial/distal fossae", "marginal ridges"]
   }
 }

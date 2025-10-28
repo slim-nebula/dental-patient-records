@@ -143,7 +143,7 @@ model-viewer {
 
 /* Hotspot Styles */
 .hotspot {
-  background: #3498db;
+  background: #27ae60;
   border: 2px solid #ffffff;
   border-radius: 50%;
   width: 32px;
@@ -153,13 +153,35 @@ model-viewer {
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.4);
+  box-shadow: 0 2px 8px rgba(39, 174, 96, 0.4);
 }
 
 .hotspot:hover {
-  background: #2980b9;
+  background: #229954;
   transform: scale(1.15);
-  box-shadow: 0 4px 12px rgba(41, 128, 185, 0.6);
+  box-shadow: 0 4px 12px rgba(34, 153, 84, 0.6);
+}
+
+/* Hotspot with annotation - RED */
+.hotspot.has-annotation {
+  background: #e74c3c;
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.4);
+}
+
+.hotspot.has-annotation:hover {
+  background: #c0392b;
+  box-shadow: 0 4px 12px rgba(192, 57, 43, 0.6);
+}
+
+/* Hotspot without annotation - GREEN (default) */
+.hotspot.no-annotation {
+  background: #27ae60;
+  box-shadow: 0 2px 8px rgba(39, 174, 96, 0.4);
+}
+
+.hotspot.no-annotation:hover {
+  background: #229954;
+  box-shadow: 0 4px 12px rgba(34, 153, 84, 0.6);
 }
 
 .hotspot:hover .hotspot-annotation {

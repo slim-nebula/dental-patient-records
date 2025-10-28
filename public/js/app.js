@@ -68,6 +68,9 @@ function generateHotspotsFromTemplate() {
     button.setAttribute('data-normal', `${hotspot.normal.x} ${hotspot.normal.y} ${hotspot.normal.z}`);
     button.setAttribute('data-hotspot-id', hotspot.id);
     
+    // Apply color based on annotation status
+    updateHotspotColor(button, hotspot.id);
+    
     const annotationDiv = document.createElement('div');
     annotationDiv.className = 'hotspot-annotation';
     annotationDiv.textContent = hotspot.id;
@@ -83,6 +86,30 @@ function generateHotspotsFromTemplate() {
   });
   
   console.log(`Generated ${toothTemplate.hotspots.length} hotspots on model`);
+}
+
+function updateHotspotColor(hotspotButton, hotspotId) {
+  // Remove existing color classes
+  hotspotButton.classList.remove('has-annotation', 'no-annotation');
+  
+  // Check if current patient has annotation for this hotspot
+  if (currentPatient && currentPatient.annotations && currentPatient.annotations[hotspotId]) {
+    hotspotButton.classList.add('has-annotation');
+  } else {
+    hotspotButton.classList.add('no-annotation');
+  }
+}
+
+function updateAllHotspotColors() {
+  if (!modelViewer) return;
+  
+  const hotspots = modelViewer.querySelectorAll('.hotspot');
+  hotspots.forEach(hotspot => {
+    const hotspotId = hotspot.getAttribute('data-hotspot-id');
+    if (hotspotId) {
+      updateHotspotColor(hotspot, parseInt(hotspotId));
+    }
+  });
 }
 
 // ===== PATIENT MANAGEMENT =====
@@ -166,6 +193,9 @@ function updatePatientInfo() {
   
   // Update notes display
   displayPatientNotes();
+  
+  // Update hotspot colors based on annotations
+  updateAllHotspotColors();
 }
 
 function displayPatientNotes() {
@@ -409,6 +439,12 @@ async function savePatientNote(hotspotId, anatomicalName) {
       currentPatient.annotations[hotspotId] = result.annotation;
       updatePatientInfo();
       
+      // Update the specific hotspot color
+      const hotspotButton = modelViewer.querySelector(`[data-hotspot-id="${hotspotId}"]`);
+      if (hotspotButton) {
+        updateHotspotColor(hotspotButton, hotspotId);
+      }
+      
       closePopup();
       alert('Notes saved successfully!');
     } else {
@@ -440,6 +476,12 @@ async function clearPatientNote(hotspotId) {
       // Update local patient data
       delete currentPatient.annotations[hotspotId];
       updatePatientInfo();
+      
+      // Update the specific hotspot color
+      const hotspotButton = modelViewer.querySelector(`[data-hotspot-id="${hotspotId}"]`);
+      if (hotspotButton) {
+        updateHotspotColor(hotspotButton, hotspotId);
+      }
       
       closePopup();
       alert('Notes cleared');
