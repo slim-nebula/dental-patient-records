@@ -1,4 +1,4 @@
-# Dental Patient Records Management System
+# Dental Patient Records Management System  (interface only functioning, to run full web app clone and run in vscode, thank you medlight HIS team)
 
 A web-based dental application for managing patient records with an interactive 3D maxillary third molar model featuring 18 anatomical annotation points for clinical observations.
 
