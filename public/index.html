@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive 3D Tooth Model</title>
+  
+  <!-- Google Model Viewer -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Dental Patient Records - Maxillary Third Molar</h1>
+      <p>Select a patient and click hotspots to add clinical observations</p>
+      
+      <!-- Patient Management Section -->
+      <div class="patient-management">
+        <div class="patient-selector">
+          <label for="patient-select">Current Patient:</label>
+          <select id="patient-select">
+            <option value="">-- Select Patient --</option>
+          </select>
+          <button id="add-patient-btn" class="btn-add-patient">➕ Add New Patient</button>
+        </div>
+        <div id="patient-info" class="patient-info hidden">
+          <span id="patient-display"></span>
+          <span id="patient-notes-count"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Add Patient Modal -->
+    <div id="add-patient-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Add New Patient</h2>
+        <form id="add-patient-form">
+          <div class="form-group">
+            <label for="new-patient-name">Patient Name:</label>
+            <input type="text" id="new-patient-name" required placeholder="e.g., John Doe">
+          </div>
+          <div class="form-group">
+            <label for="new-patient-id">Patient ID:</label>
+            <input type="text" id="new-patient-id" required placeholder="e.g., P001">
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn-save">Create Patient</button>
+            <button type="button" id="cancel-add-patient" class="btn-cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="viewer-container">
+      <model-viewer
+        id="tooth-model"
+        src="/models/tooth.glb"
+        alt="3D tooth model"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        environment-image="legacy"
+        exposure="1.5"
+        shadow-softness="0.8"
+        tone-mapping="neutral"
+        camera-orbit="45deg 75deg auto"
+        min-camera-orbit="auto auto auto"
+        max-camera-orbit="auto auto auto"
+        field-of-view="auto"
+        interaction-prompt="none"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+      >
+        <!-- Hotspots will be dynamically generated from annotations.json -->
+        
+        <div class="progress-bar" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
+      </model-viewer>
+    </div>
+
+    <!-- Info Popup -->
+    <div id="info-popup" class="info-popup hidden">
+      <button class="close-btn" onclick="closePopup()">×</button>
+      <h2 id="popup-title"></h2>
+      <p id="popup-description"></p>
+    </div>
+
+    <!-- Control Panel -->
+    <div class="control-panel">
+      <h3>View Controls</h3>
+      <div class="control-buttons">
+        <button id="reset-camera" class="control-btn" title="Reset camera to initial position">
+          <span>↻</span> Reset Camera
+        </button>
+        <button id="zoom-in" class="control-btn" title="Zoom in">
+          <span>+</span> Zoom In
+        </button>
+        <button id="zoom-out" class="control-btn" title="Zoom out">
+          <span>−</span> Zoom Out
+        </button>
+        <button id="toggle-hotspots" class="control-btn" title="Show/hide annotations">
+          <span>👁</span> Toggle Hotspots
+        </button>
+      </div>
+    </div>
+
+    <!-- Patient Notes Panel -->
+    <div id="patient-notes-panel" class="patient-notes-panel hidden">
+      <h3>Clinical Notes</h3>
+      <div id="notes-empty-state" class="notes-empty-state">
+        <p>No clinical notes recorded yet.</p>
+        <p class="notes-hint">Click hotspots on the model to add notes.</p>
+      </div>
+      <div id="patient-notes-list" class="patient-notes-list">
+        <!-- Notes will be dynamically populated -->
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+{
+  "annotations": [
+    {
+      "id": "enamel",
+      "title": "Enamel",
+      "description": "The enamel is the hard, white outer layer of the tooth. It's the hardest substance in the human body and protects the tooth from wear and tear. Enamel is made up of minerals, primarily hydroxyapatite, and doesn't contain living cells, so it cannot repair itself if damaged.",
+      "position": {
+        "x": 0,
+        "y": 0.8,
+        "z": 0
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "hotspotNumber": 1
+    },
+    {
+      "id": "dentin",
+      "title": "Dentin",
+      "description": "Dentin is the layer beneath the enamel. It's a hard, dense tissue that makes up the bulk of the tooth's structure. Unlike enamel, dentin contains microscopic tubules that can transmit sensations to the nerve inside the tooth, which is why exposed dentin can be sensitive to temperature and pressure.",
+      "position": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0
+      },
+      "normal": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      },
+      "hotspotNumber": 2
+    },
+    {
+      "id": "pulp",
+      "title": "Pulp",
+      "description": "The pulp is the soft, innermost part of the tooth containing blood vessels, nerves, and connective tissue. It provides nutrients to the tooth and allows you to feel sensations like hot, cold, and pain. The pulp extends from the crown down through the root canal to the tip of the root.",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "normal": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "hotspotNumber": 3
+    },
+    {
+      "id": "root",
+      "title": "Root",
+      "description": "The root is the part of the tooth that extends below the gum line and anchors the tooth into the jawbone. Most teeth have one to three roots, and each root contains a root canal with pulp tissue. The root is covered by cementum, which helps attach the tooth to the surrounding bone through periodontal ligaments.",
+      "position": {
+        "x": 0,
+        "y": -0.8,
+        "z": 0
+      },
+      "normal": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "hotspotNumber": 4
+    },
+    {
+      "id": "crown",
+      "title": "Crown",
+      "description": "The crown is the visible part of the tooth that extends above the gum line. It's covered by enamel and is shaped to perform specific functions - incisors for cutting, canines for tearing, and molars for grinding food. The crown's shape varies depending on the tooth's position and function in the mouth.",
+      "position": {
+        "x": -0.3,
+        "y": 0.5,
+        "z": 0
+      },
+      "normal": {
+        "x": -1,
+        "y": 0.5,
+        "z": 0
+      },
+      "hotspotNumber": 5
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "description": "Tooth anatomy annotations with positions and descriptions",
+    "coordinateSystem": "Model space coordinates (origin at center)",
+    "notes": "Adjust position values based on your specific tooth model dimensions"
+  }
+}

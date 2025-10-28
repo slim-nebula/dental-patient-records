@@ -1,0 +1,192 @@
+{
+  "tooth_type": "maxillary_third_molar",
+  "description": "Maxillary third molar with 18 anatomical annotation points",
+  "hotspots": [
+    {
+      "id": 1,
+      "name": "Mesiobuccal Cusp",
+      "type": "cusp",
+      "category": "major_cusp",
+      "position": { "x": 0.0075, "y": 0.01, "z": 0.00375 },
+      "normal": { "x": 0.5, "y": 0.7, "z": 0.5 },
+      "description": "Larger of the two buccal cusps, forms the mesial-buccal corner of the occlusal surface.",
+      "clinical_significance": "Primary functional cusp for mastication"
+    },
+    {
+      "id": 2,
+      "name": "Distobuccal Cusp",
+      "type": "cusp",
+      "category": "major_cusp",
+      "position": { "x": -0.0075, "y": 0.00875, "z": 0.00375 },
+      "normal": { "x": -0.5, "y": 0.7, "z": 0.5 },
+      "description": "Smaller buccal cusp, forms the distal-buccal corner.",
+      "clinical_significance": "Secondary functional cusp for crushing food"
+    },
+    {
+      "id": 3,
+      "name": "Lingual Cusp",
+      "type": "cusp",
+      "category": "major_cusp",
+      "position": { "x": 0.0, "y": 0.009375, "z": -0.005 },
+      "normal": { "x": 0.0, "y": 0.7, "z": -0.7 },
+      "description": "Single large cusp on the lingual (tongue-side) aspect.",
+      "clinical_significance": "Main lingual support for occlusion"
+    },
+    {
+      "id": 4,
+      "name": "Buccal Developmental Groove",
+      "type": "groove",
+      "category": "developmental_groove",
+      "position": { "x": 0.0, "y": 0.00625, "z": 0.005 },
+      "normal": { "x": 0.0, "y": 1.0, "z": 0.0 },
+      "description": "Developmental groove separating the mesiobuccal and distobuccal cusps.",
+      "clinical_significance": "Common site for caries initiation, requires careful examination"
+    },
+    {
+      "id": 5,
+      "name": "Central Fossa",
+      "type": "fossa",
+      "category": "depression",
+      "position": { "x": 0.0, "y": 0.0075, "z": 0.0 },
+      "normal": { "x": 0.0, "y": 1.0, "z": 0.0 },
+      "description": "Deep central depression in the occlusal surface with multiple supplementary grooves.",
+      "clinical_significance": "High-risk area for pit and fissure caries"
+    },
+    {
+      "id": 6,
+      "name": "Supplementary Grooves",
+      "type": "groove",
+      "category": "supplementary_groove",
+      "position": { "x": 0.0, "y": 0.006875, "z": 0.0 },
+      "normal": { "x": 0.0, "y": 1.0, "z": 0.0 },
+      "description": "Multiple irregular small grooves radiating from central fossa, giving characteristic wrinkled appearance.",
+      "clinical_significance": "Multiple caries-susceptible areas requiring thorough examination"
+    },
+    {
+      "id": 7,
+      "name": "Fused Root",
+      "type": "root",
+      "category": "root_anatomy",
+      "position": { "x": 0.0, "y": -0.00625, "z": 0.0 },
+      "normal": { "x": 0.0, "y": -1.0, "z": 0.0 },
+      "description": "Single tapered root formed by fusion of originally three roots.",
+      "clinical_significance": "Important for extraction planning and endodontic treatment"
+    },
+    {
+      "id": 8,
+      "name": "Mesiolingual Cusp",
+      "type": "cusp",
+      "category": "major_cusp",
+      "position": { "x": 0.005, "y": 0.009375, "z": -0.004375 },
+      "normal": { "x": 0.5, "y": 0.7, "z": -0.5 },
+      "description": "Mesial lingual cusp in 4-cusp variant. Usually larger than distolingual cusp.",
+      "clinical_significance": "Provides mesial lingual occlusal support"
+    },
+    {
+      "id": 9,
+      "name": "Distolingual Cusp",
+      "type": "cusp",
+      "category": "major_cusp",
+      "position": { "x": -0.005, "y": 0.008125, "z": -0.004375 },
+      "normal": { "x": -0.5, "y": 0.7, "z": -0.5 },
+      "description": "Distal lingual cusp in 4-cusp variant. Typically smaller than mesiolingual cusp.",
+      "clinical_significance": "Provides distal lingual occlusal support"
+    },
+    {
+      "id": 10,
+      "name": "Central Developmental Groove",
+      "type": "groove",
+      "category": "developmental_groove",
+      "position": { "x": 0.0, "y": 0.008125, "z": 0.0 },
+      "normal": { "x": 0.0, "y": 1.0, "z": 0.0 },
+      "description": "Main developmental groove running mesiodistally, separating buccal and lingual cusps.",
+      "clinical_significance": "Primary developmental landmark, caries-prone area"
+    },
+    {
+      "id": 11,
+      "name": "Lingual Developmental Groove",
+      "type": "groove",
+      "category": "developmental_groove",
+      "position": { "x": 0.0, "y": 0.0075, "z": -0.004375 },
+      "normal": { "x": 0.0, "y": 1.0, "z": 0.0 },
+      "description": "Groove separating mesiolingual and distolingual cusps in 4-cusp variant.",
+      "clinical_significance": "Potential retention site for plaque and caries"
+    },
+    {
+      "id": 12,
+      "name": "Mesial Triangular Fossa",
+      "type": "fossa",
+      "category": "depression",
+      "position": { "x": 0.005, "y": 0.00775, "z": 0.0 },
+      "normal": { "x": 0.0, "y": 1.0, "z": 0.0 },
+      "description": "Triangular depression on mesial aspect of occlusal surface.",
+      "clinical_significance": "Common location for pit caries"
+    },
+    {
+      "id": 13,
+      "name": "Distal Triangular Fossa",
+      "type": "fossa",
+      "category": "depression",
+      "position": { "x": -0.005, "y": 0.00775, "z": 0.0 },
+      "normal": { "x": 0.0, "y": 1.0, "z": 0.0 },
+      "description": "Triangular depression on distal aspect of occlusal surface.",
+      "clinical_significance": "Common location for pit caries"
+    },
+    {
+      "id": 14,
+      "name": "Cervical Line (CEJ)",
+      "type": "anatomical_landmark",
+      "category": "boundary",
+      "position": { "x": 0.0, "y": 0.0, "z": 0.0 },
+      "normal": { "x": 0.0, "y": -1.0, "z": 0.0 },
+      "description": "The cervical line marking the junction between enamel (crown) and cementum (root).",
+      "clinical_significance": "Important landmark for periodontal assessment and crown preparation"
+    },
+    {
+      "id": 15,
+      "name": "Occlusal Table",
+      "type": "surface",
+      "category": "functional_area",
+      "position": { "x": 0.0, "y": 0.00875, "z": 0.0 },
+      "normal": { "x": 0.0, "y": 1.0, "z": 0.0 },
+      "description": "The functional chewing surface bounded by cusps and marginal ridges.",
+      "clinical_significance": "Primary surface for mastication and occlusal contacts"
+    },
+    {
+      "id": 16,
+      "name": "Mesial Marginal Ridge",
+      "type": "ridge",
+      "category": "anatomical_landmark",
+      "position": { "x": 0.00875, "y": 0.00875, "z": 0.0 },
+      "normal": { "x": 1.0, "y": 0.5, "z": 0.0 },
+      "description": "Elevated ridge forming the mesial boundary of the occlusal surface.",
+      "clinical_significance": "Important for proper contact with adjacent tooth (second molar)"
+    },
+    {
+      "id": 17,
+      "name": "Distal Marginal Ridge",
+      "type": "ridge",
+      "category": "anatomical_landmark",
+      "position": { "x": -0.00875, "y": 0.0085, "z": 0.0 },
+      "normal": { "x": -1.0, "y": 0.5, "z": 0.0 },
+      "description": "Elevated ridge forming the distal boundary of the occlusal surface.",
+      "clinical_significance": "May be site of food impaction if poorly contoured"
+    },
+    {
+      "id": 18,
+      "name": "Root Apex",
+      "type": "anatomical_landmark",
+      "category": "root_anatomy",
+      "position": { "x": 0.0, "y": -0.01, "z": 0.0 },
+      "normal": { "x": 0.0, "y": -1.0, "z": 0.0 },
+      "description": "Terminal end of the fused root. May be curved or irregular in third molars.",
+      "clinical_significance": "Critical landmark for endodontic treatment and extraction"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "total_hotspots": 18,
+    "coordinate_system": "Model space coordinates (origin at center)",
+    "notes": "Fixed anatomical template for maxillary third molar"
+  }
+}

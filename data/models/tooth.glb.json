@@ -1,0 +1,22 @@
+{
+  "modelName": "tooth.glb",
+  "annotations": [
+    {
+      "id": "hotspot-1761665789461",
+      "hotspotNumber": "1",
+      "title": "test 1",
+      "description": "this s test to check edit mode",
+      "position": {
+        "x": 0.11,
+        "y": 0.13,
+        "z": 0.25
+      },
+      "normal": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      }
+    }
+  ],
+  "lastModified": "2025-10-28T15:36:29.482Z"
+}
