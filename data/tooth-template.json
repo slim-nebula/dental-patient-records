@@ -53,7 +53,7 @@
       "clinical_significance": "High-risk area for pit and fissure caries"
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "Fused Root",
       "type": "root",
       "category": "root_anatomy",
@@ -63,7 +63,7 @@
       "clinical_significance": "Important for extraction planning and endodontic treatment"
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "Mesiolingual Cusp",
       "type": "cusp",
       "category": "major_cusp",
@@ -73,7 +73,7 @@
       "clinical_significance": "Provides mesial lingual occlusal support"
     },
     {
-      "id": 9,
+      "id": 8,
       "name": "Distolingual Cusp",
       "type": "cusp",
       "category": "major_cusp",
@@ -83,7 +83,7 @@
       "clinical_significance": "Provides distal lingual occlusal support"
     },
     {
-      "id": 10,
+      "id": 9,
       "name": "Central Developmental Groove",
       "type": "groove",
       "category": "developmental_groove",
@@ -93,7 +93,7 @@
       "clinical_significance": "Primary developmental landmark, caries-prone area"
     },
     {
-      "id": 14,
+      "id": 10,
       "name": "Cervical Line (CEJ)",
       "type": "anatomical_landmark",
       "category": "boundary",
@@ -103,7 +103,7 @@
       "clinical_significance": "Important landmark for periodontal assessment and crown preparation"
     },
     {
-      "id": 15,
+      "id": 11,
       "name": "Occlusal Table",
       "type": "surface",
       "category": "functional_area",
@@ -113,7 +113,7 @@
       "clinical_significance": "Primary surface for mastication and occlusal contacts"
     },
     {
-      "id": 18,
+      "id": 12,
       "name": "Root Apex",
       "type": "anatomical_landmark",
       "category": "root_anatomy",
@@ -128,7 +128,7 @@
     "total_hotspots": 12,
     "coordinate_system": "Model space coordinates (origin at center)",
     "notes": "Essential anatomical template for maxillary third molar - 12 mandatory points",
-    "removed_points": [6, 11, 12, 13, 16, 17],
+    "removed_points": ["original IDs: 6, 11, 12, 13, 16, 17"],
     "removed_categories": ["supplementary_groove", "mesial/distal fossae", "marginal ridges"]
   }
 }
